@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-bar{
+    width: 17rem;
+    height: 87%;
+    background-color: rgb(16, 189, 151);
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+.main{
+    flex: 1;
+    height: 87%;
+    background-color: rgb(68, 0, 255);
+    border-radius: 0.5rem;
+
+
+}
+.player{
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+    background-color: red;
+}
