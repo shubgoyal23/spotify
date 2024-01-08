@@ -11,7 +11,7 @@ body{
 .nav-bar{
     width: 17rem;
     height: 87%;
-    background-color: rgb(16, 189, 151);
+    background-color: rgb(0, 0, 0);
     border-radius: 0.5rem;
     margin-right: 0.5rem;
 }
@@ -30,3 +30,74 @@ body{
     width: 100%;
     background-color: red;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+.home{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #121212;
+    border-radius: 0.5rem;
+    height: 7rem;
+    margin-bottom: 0.5rem;
+}
+.home div{
+    display: flex;
+    justify-content: flex-start;
+    height: 3rem;
+}
+.home i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    opacity: 0.8;
+}
+.home a{
+    font-size: 1rem;
+    opacity: 0.8;
+}
+.home a:hover, i:hover{
+    opacity: 1;
+}
+.search{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #121212;
+    border-radius: 0.5rem;
+    height: 27.6rem;
+}
+.library-heading{
+    display: flex
+}
+
+.search-head{
+    display: flex;
+    justify-content: space-between;
+}
+.search-head img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+.search-head button{
+    background-color: transparent;
+    color: white;
+    opacity: 0.7;
+    border: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+.search-head button:hover{
+    opacity: 1;
+}
+#nav-bar-playlist{
+    font-size: 1.2rem;
+}
+
