@@ -163,6 +163,7 @@ a{
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .nav-arrow{
@@ -372,4 +373,57 @@ input[type="range" i] {
 #volume{
     width: 5rem;
     height: 3px;
+}
+.active a,.active i{
+    opacity: 1 !important;
+}
+.search-card{
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
+    background-color: rgb(230, 95, 140);
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+.search-card p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 1rem;
+}
+.search-card img{
+    width: 8rem;
+    height: 8rem;
+    transform: rotate(25deg) translate(75%,-15%);
+}
+.find-bar{
+    margin-left: 1rem;
+    background-color: #413f3f;
+    height: 3rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+}
+.find-bar:focus-within{
+    border: solid 2px white;
+}
+.find-bar input{
+    background-color: transparent;
+    border: none;
+    width: 95%;
+    margin-left: 0.5rem;
+    appearance: none;
+    color: white;
+    cursor: pointer;
+
+}
+textarea:focus, input:focus{
+    outline: none;
 }
