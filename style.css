@@ -15,6 +15,12 @@ body{
     border-radius: 0.5rem;
     margin-right: 0.5rem;
 }
+.hidden{
+    display: none !important;
+}
+.narrow-bar{
+    width: 4.5rem !important;
+}
 .main{
     flex: 1;
     height: 87%;
@@ -74,11 +80,14 @@ a{
     height: 27.6rem;
 }
 .library-heading{
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .search-head{
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-between;
 }
 .search-head img{
