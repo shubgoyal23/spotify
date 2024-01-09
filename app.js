@@ -1,3 +1,4 @@
+
 let navBarBtn = document.querySelector("#nav-bar-collapse");
 let navBar = document.querySelector(".nav-bar");
 let navBarHomeLink = document.querySelector(".home a");
@@ -70,3 +71,4 @@ for (const items of genreData) {
     div.classList.add("search-card")
     genreContainer.appendChild(div)
 }
+
