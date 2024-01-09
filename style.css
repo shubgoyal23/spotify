@@ -28,7 +28,12 @@ body{
     bottom: 0;
     height: 72px;
     width: 100%;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -196,21 +201,21 @@ a{
     gap: 1rem;
     margin-bottom: 2rem;
 }
-@media screen and (width < 700px){
-    .main-card-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-}
-@media screen and (width < 900px){
+@media screen and (max-width: 900px){
     .main-card-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
 }
-@media screen and (width < 500px){
+@media screen and (max-width: 700px){
+    .main-card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 500px){
     .main-card-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -270,4 +275,92 @@ a{
 }
 .legal p:hover{
     color: #fff;
+}
+
+.player-currentplaying {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 1rem;
+}
+.player-currentplaying img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.2rem;
+}
+.player-currentplaying-name{
+    font-size: 0.8rem;
+    margin: 0;
+}
+.player-currentplaying-artist{
+    font-size: 0.68rem;
+    opacity: 0.8;
+    margin: 0;
+}
+.player-currentplaying i{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.player-currentplaying i:hover{
+    opacity: 1;
+    scale: 1.01;
+}
+.player-controls{
+    flex: 2;
+}
+.player-controls-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-controls-options img{
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.8;
+    cursor: pointer;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+.player-controls-options img:hover{
+    scale: 1.2;
+    opacity: 1;
+}
+.player-controls-options .middle{
+    width: 2rem;
+    height: 2rem;
+    opacity: 1;
+}
+.player-options{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    padding-right: 1rem;
+}
+.player-controls-playbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.player-controls-playbar input{
+    width: 70%;
+    height: 4px;
+    
+}
+input[type="range" i] {
+    -webkit-appearance: none;
+    appearance: auto;
+    cursor: default;
+    color: -internal-light-dark(rgb(3, 233, 99), rgb(255, 255, 255));
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
+
+#volume{
+    width: 5rem;
+    height: 3px;
 }
