@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>spotify</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="icon" sizes="32x32" type="image/png" href="./assets/logo.png" />
+      <script src="app.js" defer></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         />
+   </head>
+   <body>
+      <div class="nav-bar">
+         <div class="home">
+            <div class="top" id="home">
+               <i class="fa-solid fa-house"></i>
+               <a href="./index.html">Home</a>
+            </div>
+            <div class="bottom active" id="search">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               <a href="#">Search</a>
+            </div>
+         </div>
+         <div class="search">
+            <div class="search-head">
+               <button id="nav-bar-collapse">
+               <span><img src="./assets/library_icon.png" alt="" /></span>
+               <span class="library">Your Library</span>
+               </button>
+               <button id="nav-bar-playlist">
+               <i class="fa-solid fa-plus"></i>
+               </button>
+            </div>
+            <div class="playlist-card">
+               <p class="playlist-card-head">Create your first playlist</p>
+               <p class="playlist-card-desc">It's easy, we'll help you</p>
+               <button id="create-playlist" class="playlist-card-btn">
+               Create playlist
+               </button>
+            </div>
+            <div class="playlist-card">
+               <p class="playlist-card-head">Let's find some podcasts to follow</p>
+               <p class="playlist-card-desc">
+                  We'll keep you updated on new episodes
+               </p>
+               <button id="create-playlist" class="playlist-card-btn">
+               Browse podcasts
+               </button>
+            </div>
+         </div>
+      </div>
+      <div class="main">
+         <div class="main-top-bar">
+            <div class="nav-arrow">
+               <i class="fa-solid fa-chevron-left"></i>
+               <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="find-bar">
+                <label for="search-key"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input type="search" placeholder="What do you want to listen to?" id="search-key">
+            </div>
+            <div class="empty"></div>
+            <div class="nav-login">
+               <button id="premium" class="playlist-card-btn main-nav">
+               Explore Premium
+               </button>
+               <button id="app-install" class="playlist-card-btn main-nav black">
+               <i class="fa-regular fa-circle-down"></i> Install App
+               </button>
+               <button id="notification" class="playlist-card-btn main-nav black">
+               <i class="fa-regular fa-bell"></i>
+               </button>
+               <button id="login" class="playlist-card-btn main-nav black">
+               <i class="fa-regular fa-user"></i>
+               </button>
+            </div>
+         </div>
+         <div class="main-content">
+            <h2>Browse all</h2>
+            <div class="main-card-container" id="genre-container">
+               <!-- <div class="search-card">
+                   <p class="search-card-heading">Music</p>
+                  <img src="./assets/card1img.jpeg" alt="" />
+               </div>
+               <div class="search-card">
+                   <p class="search-card-heading">Music</p>
+                  <img src="./assets/card1img.jpeg" alt="" />
+               </div> -->
+            </div>
+            
+            
+            <!-- footer -->
+            <div class="main-footer">
+               <div class="legal">
+                  <p>Legal</p>
+                  <p>privacy center</p>
+                  <p>Privacy Policy</p>
+                  <p>Cookies</p>
+                  <p>About Ads</p>
+                  <p>Accessibility</p>
+               </div>
+               <div class="legal">
+                  <p>© 2024 Spotify AB</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="player">
+         <div class="player-currentplaying">
+            <img src="./assets/card3img.jpeg" alt="" />
+            <div>
+               <p class="player-currentplaying-name">Lehra Do - From "83"</p>
+               <p class="player-currentplaying-artist">Pritam, Arjit singh</p>
+            </div>
+            <i class="fa-regular fa-heart"></i>
+         </div>
+         <div class="player-controls">
+            <div class="player-controls-options">
+               <img src="./assets/player_icon1.png" alt="" />
+               <img src="./assets/player_icon2.png" alt="" />
+               <img src="./assets/player_icon3.png" alt="" class="middle" />
+               <img src="./assets/player_icon4.png" alt="" />
+               <img src="./assets/player_icon5.png" alt="" />
+            </div>
+            <div class="player-controls-playbar">
+               <input type="range" min="1" max="100" />
+            </div>
+         </div>
+         <div class="player-options">
+            <i class="fa-regular fa-circle-play"></i>
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-layer-group"></i>
+            <label for="volume"><i class="fa-solid fa-volume-low"></i></label>
+            <input type="range" name="" id="volume" min="1" max="10" step="1" />
+            <i class="fa-solid fa-compress"></i>
+         </div>
+      </div>
+   </body>
+</html>
