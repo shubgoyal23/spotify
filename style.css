@@ -20,8 +20,7 @@ body{
     height: 87%;
     background-color: rgb(68, 0, 255);
     border-radius: 0.5rem;
-
-
+    
 }
 .player{
     position: fixed;
@@ -63,7 +62,7 @@ a{
 .search{
     box-sizing: border-box;
     width: 100%;
-    padding: 1.5rem;
+    padding: 0.5rem;
     background-color: #121212;
     border-radius: 0.5rem;
     height: 27.6rem;
@@ -77,8 +76,8 @@ a{
     justify-content: space-between;
 }
 .search-head img{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.3rem;
+    width: 1.3rem;
     margin-right: 1rem;
 }
 .search-head button{
@@ -86,13 +85,14 @@ a{
     color: white;
     opacity: 0.7;
     border: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
+    margin-left: 0.7rem;
 }
 .search-head button:hover{
     opacity: 1;
@@ -100,4 +100,47 @@ a{
 #nav-bar-playlist{
     font-size: 1.2rem;
 }
+.playlist-card{
+    background-color: #242424;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+.playlist-card-head{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.playlist-card-desc{
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-top: 0rem;
+    opacity: 0.8;
+}
+.playlist-card-btn{
+    background-color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.playlist-card-btn:hover{
+    opacity: 0.9;
+    transform: scale(1.05);
+}
 
+/* navbar done */
+
+.main-top-bar{
+    position: absolute;
+    top: 0;
+    height: 64px;
+    width: 100%;
+    background-color: #121212;
+}
